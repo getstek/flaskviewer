@@ -1,13 +1,13 @@
 
 {
-  "id": "flaskviewer",
+  "id": "demo-app",
   "labels": {
                 "HAPROXY_GROUP":"external",
-                "SERVICE_NAME": "flaskviewer",
-                "SERVICE_TAGS": "flaskviewer",
+                "SERVICE_NAME": "demo-app",
+                "SERVICE_TAGS": "demo-app",
                 "HAPROXY_0_REDIRECT_TO_HTTPS": "false",
-                "MARATHON_HOSTNAME": "flaskviewer",
-                "HAPROXY_0_VHOST": "flaskviewer.snakedetectiontheory.com",
+                "MARATHON_HOSTNAME": "demo-app",
+                "HAPROXY_0_VHOST": "demo-app.snakedetectiontheory.com",
                 "HAPROXY_0_PORT": "80",
                 "HAPROXY_0_MODE": "http"
                 },
@@ -16,7 +16,7 @@
     "docker": {
     "parameters": [
       ],
-      "image": "nexus.snakedetectiontheory.com:14000/flaskviewer",
+      "image": "nexus.ov.otto.de:14000/demo-app",
       "network": "BRIDGE",
       "portMappings": [
         { "containerPort": 8359, "hostPort": 0, "servicePort": 0, "protocol": "tcp" }
