@@ -1,0 +1,32 @@
+
+{
+  "id": "flaskviewer",
+  "labels": {
+                "HAPROXY_GROUP":"external",
+                "SERVICE_NAME": "flaskviewer",
+                "SERVICE_TAGS": "flaskviewer",
+                "HAPROXY_0_REDIRECT_TO_HTTPS": "false",
+                "MARATHON_HOSTNAME": "flaskviewer",
+                "HAPROXY_0_VHOST": "flaskviewer.snakedetectiontheory.com",
+                "HAPROXY_0_PORT": "80",
+                "HAPROXY_0_MODE": "http"
+                },
+  "container": {
+    "type": "DOCKER",
+    "docker": {
+    "parameters": [
+      ],
+      "image": "nexus.snakedetectiontheory.com:14000/flaskviewer",
+      "network": "BRIDGE",
+      "portMappings": [
+        { "containerPort": 8359, "hostPort": 0, "servicePort": 0, "protocol": "tcp" }
+      ]
+    },
+    "uris":  [
+      "file:///etc/docker.tar.gz"
+        ]
+  },
+  "instances": 2,
+  "cpus": 0.25,
+  "mem": 64
+}
