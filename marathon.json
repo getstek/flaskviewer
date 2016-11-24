@@ -18,7 +18,6 @@
       ],
       "image": "nexus.snakedetectiontheory.com:14000/flaskviewer",
       "network": "BRIDGE",
-      "forcePullImage": true,
       "portMappings": [
         { "containerPort": 8359, "hostPort": 0, "servicePort": 0, "protocol": "tcp" }
       ]
