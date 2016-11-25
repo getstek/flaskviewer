@@ -8,7 +8,7 @@
                 "HAPROXY_0_REDIRECT_TO_HTTPS": "false",
                 "MARATHON_HOSTNAME": "demo-app",
                 "HAPROXY_0_VHOST": "demo-app.ov.otto.de",
-                "HAPROXY_0_PORT": "9000",
+                "HAPROXY_0_PORT": "9001",
                 "HAPROXY_0_MODE": "http"
                 },
   "container": {
